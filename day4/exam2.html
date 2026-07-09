@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+<body>
+    <h3> 테이블/표 마크업 </h3>
+    <table border="1">     <!-- 테이블 전체 감싼 마크업 -->
+        <thred> <!-- 테이블의 제목 구역-->
+            <tr> <!-- 테이블의 행 추가-->
+                <th> <!-- 테이블의 제목-->
+                    제목1
+                </th>
+                <th> 제목2 </th>
+            </tr>
+        </thred>
+        <tbody> <!-- 테이블의 본문 구역 -->
+            <tr> <!-- 테이블 행 추가 -->
+                <td> <!-- 테이블의 데이터(셀/한칸) -->
+                    데이터1
+                </td>
+                <td rowspan="2"> 데이터2 </td> <!--rowspan="행병합수"-->
+            </tr>
+            <tr>
+                <td>데이터4</td>
+            </tr>
+            <tr><!-- 테이블 행 추가-->
+                <td colspan="2"> 데이터3 </td> <!-- colspan="열병합수"-->
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
