@@ -51,3 +51,23 @@
         * ++변수명 : 선위증가, 변수명++ : 후위증가, --변수명 : 선위감소, 변수명-- : 후위감소
     7. 삼항연산자 : 조건 ? 참 : 거짓     ,   조건A ? 참A : 조건B ? 참B : 조건C ? 참C : 거짓
         * 점수 >= 90? '합격' : '불합격'
+
+- if 
+    1. if( boolean ) code 
+    2. if( boolean ){ code; code; }
+    3. if( boolean ){ code; }
+        else{ code; }
+    4. if( boolean ){ }
+        else if( boolean ){ }
+        else if( boolean ){ }
+        else{ }
+    5. if( boolean ){ }
+       if( boolean ){ }
+       if( boolean ){ }
+    6. if
+        if( boolean ){
+            if( boolean ){
+                
+            }
+        }
+    
