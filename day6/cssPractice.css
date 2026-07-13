@@ -5,11 +5,11 @@
     font-weight: bold;       
 }
 .content{
-    font-family: "굴림체";
+    font-family: "굴림";
     color: blue;
     font-size: 20px;
-    word-spacing: 10px;                 /* 단어간역(어간) */
-    letter-spacing: 10px;               /* 글자간격(자간) */
+    word-spacing: 10px;                
+    letter-spacing: 10px;               
 
 }
 .person{
@@ -24,4 +24,12 @@
     text-decoration: underline overline line-through;
     color: red;
     font-weight: bold;
+}
+.content2{
+    font-family: "굴림";
+    color: blue;
+    font-size: 20px;
+    word-spacing: 10px;                 
+    letter-spacing: 10px;               
+
 }
