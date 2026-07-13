@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>CSS 배우기</title>
+    <link rel='stylesheet' href='main.css'>
+    <!-- CSS 방법2 -->
+    <style>
+        h4{ color: blue; }
+    </style>
+    <!-- CSS 방법3 -->
+     <link href = "exam1.css" rel="stylesheet"/>
+    </head>
+<body>
+    <!-- 
+        HTML : 이동가능한 텍스트 마크업 언어                                ex] 뼈대
+        CSS : Cascading( 위에서 아래로 흐름 ) Style( 꾸미기 ) Sheets(덮는)  ex] 옷
+            -> 위에서 아래로 (HTML)꾸미기 시트 덮는다.
+        JS : 자바스크립트 프로그래밍 언어                                   ex] 동적(이벤트)
+    -->
+    <!-- CSS 적용하는 방법1 : 인라인( 마크업내 style 속성 이용 ) -->
+    <h3 style=" color : red; ">  CSS방법1 </h3> <!-- h3 마크업 -->
+    
+    <!-- CSS 적용하는 방법2 : <head> 마크업내 <style> 마크업 안에서 CSS 문법 -->
+    <h4> CSS방법2 </h4>
+    
+    <!-- CSS 적용하는 방법3 : .css 파일내 css문법 작성 하고 <head> 마크업에서 호출-->
+    <h5> CSS방법3 </h5>
+
+    <h6> CSS선택자 </h6>
+    <h6 class = "구역1" > CSS선택자2 </h6>
+    <h6 id = "구역2" > CSS선택자3 </h6>
+
+    <!-- 주의할점 : 하위요서 마크업 작성시 tab탭 -->
+     <div> <!-- 상위요소 body, 하위요서 h3, ol, li -->
+        <h3> 학생명단 </h3> <!-- 상위요소 div, 하위요소 x-->
+        <ol> <!-- 상위요소 div, 하위요소 li-->
+            <li id="이름1"> 유재석 </li>
+            <li>
+                <h3> 강호동 </h3>
+            </li>
+        </ol>
+     </div>   
+
+     <h2> CSS 텍스트 속성 </h2>
+     <h1 class="title"> 강아지 </h1>
+     <div class="본문구역">
+        개는 중형 동물이자 가장 널리 분포하며 개체 수가 <br/>
+        가장 많은 지상 동물 중 하나이며 가축화된 회색늑대이다. <br/>
+        개는 인류가 최초로 가축으로 삼은 동물로 알려져 있으며, <br/>
+        역사적으로 반려견, 사냥견으로서 길러 왔다.
+     </div>
+     <p class="작성자"> 위키백과 </p>
+</body>
+</html>
