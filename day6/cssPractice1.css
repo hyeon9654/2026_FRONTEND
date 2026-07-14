@@ -9,17 +9,19 @@
     color: blue;
     font-size: 20px;
     word-spacing: 10px;                
-    letter-spacing: 10px;               
-
+    letter-spacing: 5px;               
+    font-weight: bold;
+    text-shadow: 1px 1px 1px blue;
+    line-height: 140%;
 }
 .person{
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     text-decoration: underline overline line-through;
     color: red;
 }
 .person2{
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     text-decoration: underline overline line-through;
     color: red;
@@ -30,6 +32,14 @@
     color: blue;
     font-size: 20px;
     word-spacing: 10px;                 
-    letter-spacing: 10px;               
-
+    letter-spacing: 5px;     
+    font-weight: bold;  
+    text-shadow: 1px 1px 1px blue;        
+    line-height: 140%;
+}
+.advice{
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline overline line-through;
+    color: red;
 }

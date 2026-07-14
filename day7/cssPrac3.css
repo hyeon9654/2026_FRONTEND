@@ -1,0 +1,8 @@
+.main{
+    margin: 0 auto;                 /* 바깥여백의 왼/오른쪽을 auto 설정 */
+    width: 50px;                    /* 가로 사이즈, 주의할점 : 생략시 100% */
+    text-align: center;             /* 구역내 컨텐츠 가로정렬 */
+    color: black;                   /* 글꼴 색상 */
+    background-color: white;      /* 구역 배경 색상 */
+    box-shadow: 1px 1px 1px 1px pink;
+}
