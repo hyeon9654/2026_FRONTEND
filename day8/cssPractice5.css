@@ -1,0 +1,30 @@
+.total{
+    text-align: center;
+    background-color: pink;
+    width: 370px;
+    padding: 20px 25px 25px 25px;
+}
+.name{
+    width : 270px;
+    margin : 0 auto 30px auto;
+    border: solid 2px white;      
+    border-radius: 30px;  
+    padding: 10px 0; 
+    font-size: 22px;            
+}
+.img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.button{
+    width: 330px;
+    height: 55px;
+    border-radius: 10px;
+    color: white;
+    background-color: skyblue;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
