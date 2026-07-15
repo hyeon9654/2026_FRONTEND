@@ -1,23 +1,36 @@
 .main{
-    margin: 5px 100px;                                
+    margin: 30px auto;                                
     text-align: center;             
     color: black;                  
     background-color: white;      
     box-shadow: 3px 3px 9px pink;
-    border-radius: 10px;
-    width: 350px;
-    height: 350px;
+    border-radius: 12px;
+    width: 400px;
+    height: 370px;
+    padding-top: 45px;
 }
 
+h3 {
+    font-size: 28px;
+}
+input{
+    margin-bottom: 15px;
+}
 .idBox{
-    border-radius: 5px;
+    border-radius: 7px;
     width: 150px; height: 25px; 
+    padding-left: 5px;
 }
 .passwordBox{
-    border-radius: 5px;
+    border-radius: 7px;
     width: 150px; height: 25px; 
+    padding-left: 5px; 
 }
 .login{
     border-radius: 5px;
+    color: white;
+    background-color: blue;
 }
-.acc
+.accession{
+    color: blue;
+}
