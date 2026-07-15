@@ -1,0 +1,16 @@
+.total{
+    border-top: solid 1px gray;       
+    border-right: solid 1px gray ;     
+    border-left: solid 1px gray;      
+    border-bottom: solid 1px gray ; 
+}
+.img{ 
+    text-align: center;
+    border-bottom: solid 1px gray ;    
+    display: block;
+}
+
+.yellow{
+    color: orange;
+    font-weight: bold;
+}

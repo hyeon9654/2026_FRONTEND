@@ -1,0 +1,62 @@
+*{ border: 1px solid red; }
+.box{ width:100px}
+
+/* display : flex */
+.flexbox1{
+    display:flex;
+    width: 250px; 
+    flex-wrap : nowrap;
+}
+
+.flexbox2{
+    display:flex;
+    width: 250px; 
+    flex-wrap : wrap;
+}
+
+.flexbox3{
+    display:flex; 
+    flex-direction : row;
+}
+
+.flexbox4{
+    display:flex;
+    flex-direction : column;
+}
+
+.flexbox5{
+    display:flex;
+    justify-content: flex-start;
+}
+
+.flexbox6{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.flexbox7{
+    display:flex;
+    justify-content: center;
+}
+
+.flexbox8{
+    display:flex;
+    justify-content: space-between;
+}
+
+.flexbox9{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.flexbox10{
+    display:flex;
+    gap: 20px;
+}
+
+.flexbox11{
+    width: 250px;
+    flex-wrap : wrap;
+    display:flex;
+    gap: 10px 20px;;
+}
