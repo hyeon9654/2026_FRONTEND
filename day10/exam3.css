@@ -1,0 +1,42 @@
+
+/* *모든 선택자 ,  border : 테두리 */
+*{ border : 1px solid red; }
+
+/* *ID선택자 */
+#wrap{
+    width: 1280px;  /* 웹표준 가로크기 */
+    margin: 0 auto; /* 구역 가로가운데 */
+}
+#header{ height: 100px;}
+#main{
+    /* 본문과 사이드바 가로배치 */
+    display: flex;      
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+#main > #content{ width: 840px; height: 500px;}
+#main > #sidebar{ width: 420px; height: 500px;}
+
+#footer{ height: 50px; }
+/* height는 주로 내용물만큼 사용하므로 직접 지정하지 않는다. */
+
+/* 1. px(픽셀) : 화면 구성하는 가장 작은 점, 절댓값 */
+.px{
+    width: 200px; /* 부모 요소 500px 중 200px */
+    font-size: 16px; 
+    background-color: skyblue;
+}
+
+/* 2. %(백분) : 자신이 속한 부모 요소의 크기를 기준으로 상대값 , 반응형 웹 */
+.percent{
+    width: 50%; /* 부모요소 500px 중 50% -> 250px */
+    font-size: 16px;
+    background-color: green;
+}
+/* 3. rem : 자신이 속한 부모 요소와 상관없이 HTML 뿌리 요소 비례하여 상대값 */
+.rem{
+    font-size: 1.5rem;  /* HTML 루트 폰트크기 16px -> 1.5rem(150%) -> 24px */
+}
+/* 4. vw/vh : 자신이 속한 부모 요소와 상관없이 디바이스(브라우저창)에 비례하여 상대값, 반응형 웹 */
+.vw{ width: 60vw; background-color: orange; }               /* 60% 자치하는 가로 사이즈 */
+.vh{ width: 200px; height: 30vh; background-color: pink;} /* 30% 자치하는 세로 사이즈 */
