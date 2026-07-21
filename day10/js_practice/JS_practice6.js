@@ -25,10 +25,19 @@ console.log(sumArray(numbers))
 /*실습 3: 가장 긴 단어 찾기
 문자열로 이루어진 배열을 매개변수로 받아, for 반복문을 사용해 가장 긴 단어를 찾아 반환하는 findLongestWord 함수를 만드세요. 아래 words 배열로 테스트해 보세요. */
 const words = ['apple', 'banana', 'kiwi', 'strawberry'];
-function findLongestWord(words){
-    let find = ' '
-    for( let  )
-}
+function findLongesWord( 문자열배열 ){
+    // .length : 문자열 길이 반환 속성 
+    let max = 문자열배열[0] // 첫번째 요소/값이 가장 큰 값으로 지정 // apple
+    for( let index = 1 ; index <= 문자열배열.length-1 ; index++ ){
+        // 만약에 max에 저장된 문자열길이 보다 index번째 문자열길이가 이상이면 
+        if( max.length <= 문자열배열[index].length ){
+            max = 문자열배열[index] // max에 index번째 문자열 대입 
+        } // if end 
+    } // for end 
+    return max;
+} // f end 
+console.log( findLongesWord( words ) )
+
 
 /*실습 4: 게임 점수 관리하기
 
