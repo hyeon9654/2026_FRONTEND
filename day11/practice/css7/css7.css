@@ -1,0 +1,207 @@
+
+
+*{box-sizing: border-box; padding: 0px; margin: 0px;}
+a{ text-decoration: none; color: black; }
+li{ list-style-type: none; }
+
+#header{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_menu{
+    display: flex;
+    justify-content: end;
+    margin: 10px 0px;
+}
+.main_menu{
+    display: flex;
+    justify-content: end;
+    margin: 20px 0px;
+}
+.top_menu > li{
+    margin-left: 15px;
+}
+.main_menu > li{
+    margin-left: 45px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.img_main_bg{ 
+    width: 100%;
+    margin: 0 auto;
+}
+/*===========================================================*/
+
+#main{ width: 1280px; margin: 0 auto; }
+#main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.sidebar2 > ol > li{ 
+    list-style-type: none; 
+    margin-bottom: 12px;}
+.sidebar3 > ol > li{ 
+    list-style-type: none; 
+    margin-bottom: 12px;}
+    
+a{
+    text-decoration: none; /* a하이퍼링크 밑줄 제거 */
+    color: black; /* a하이퍼링크 색상 검정 */
+}
+ol{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+    width: 280px;
+}
+
+.title{
+    background-color: rgb(82, 202, 162);
+    padding: 10px;
+    color: white;
+}
+.massage{
+    margin: 10px;
+}
+.searching{
+    width: 160px;
+    height: 36px;
+    border-radius: 10px;
+    padding: 0px 7px;
+    margin: 5px;
+    box-sizing: border-box;
+
+}
+.button{
+    height: 38px;
+    padding: 0 10px;
+    margin-left: 5px;
+}
+
+.AB{
+    border-top: 2px solid black;
+    padding-top: 12px;
+    margin-bottom: 18px;
+}
+.CD{
+    border-bottom: 2px solid black;
+    padding-bottom: 12px;
+    margin-bottom: 18px;
+}
+
+#centerBox{
+    width: 500px;
+    justify-content: space-between; 
+    gap: 10px;
+}
+
+.notice{
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+.notice li{
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 18px;
+}
+.rightbar > ol > li{list-style-type: none;}
+
+.notice{
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+.notice1 li{
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.notice1{
+    display: flex;
+}
+.notice2{
+    display: flex;
+}
+.notice2 li{
+    list-style-type: none;
+}
+
+.picgap{
+    margin-left: 30px;
+}
+
+.ooo{
+    margin-left: 290px;
+}
+/*푸터=======================================*/
+/* *{
+    border: 1px solid rebeccapurple;
+} */
+
+#header{
+    width: 1280px;
+    margin: 0 auto; /* 구역 가운데 정렬 */
+}
+
+#main{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/* 자주 사용되는 기본CSS */
+*{
+    box-sizing: border-box; /* content + heading 포함 사이즈 정의 */
+    padding: 0px; margin: 0px; /* 기본 여백 제거 */
+}
+a{
+    text-decoration: none; /* a하이퍼링크 밑줄 제거 */
+    color: black; /* a하이퍼링크 색상 검정 */
+}
+li{
+    list-style-type: none; /* li 항목 글머리 제거 */
+}
+
+#footer{ 
+    background-color: #1d334c;
+    color: white;
+}
+
+.footer1 > ol{
+    display: flex;
+    gap: 30px;
+    margin-left: 0px;
+    margin-bottom: 50px;
+}
+
+
+.footer_bottom{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footer2{
+    padding-right: 200px;
+}
+.footer3{
+    padding-right: 200px;
+    margin-bottom: 20px;
+}.footer4{
+    padding-right: 200px;
+}
+
+.footer1{
+    width: 1280px;
+    margin: 0 auto
+    
+}

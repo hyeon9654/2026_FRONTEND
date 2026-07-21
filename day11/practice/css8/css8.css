@@ -1,0 +1,45 @@
+
+
+*{box-sizing: border-box; padding: 0px; margin: 0px;}
+a{ text-decoration: none; color: black; }
+li{ list-style-type: none; }
+
+
+
+.main1{
+    display: flex;
+    justify-content: center;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.right_main{
+    display: flex;
+}
+.left_main{
+    display: flex;
+}
+
+.main2_바탕{
+    background-color: #efefef;
+    margin: 10px;
+}
+.main2{
+    width: 1280px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.main2 img{ width: 20%;}
+.main2 > ol{
+    display: flex;
+    
+}
+ol{
+    gap:10px;
+    margin: 15px;
+}
+ol > li{
+    font-size: 11px;
+
+}
