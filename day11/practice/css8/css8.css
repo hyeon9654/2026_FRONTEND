@@ -1,11 +1,50 @@
+/* *{
+    border: 1px solid rebeccapurple;
+}
+ */
+#header{
+    width: 1280px;
+    margin: 0 auto; /* 구역 가운데 정렬 */
+}
 
+#main{
+    width: 1280px;
+    margin: 0 auto;
+}
 
-*{box-sizing: border-box; padding: 0px; margin: 0px;}
-a{ text-decoration: none; color: black; }
-li{ list-style-type: none; }
-
-
-
+/* 자주 사용되는 기본CSS */
+*{
+    box-sizing: border-box; /* content + heading 포함 사이즈 정의 */
+    padding: 0px; margin: 0px; /* 기본 여백 제거 */
+}
+a{
+    text-decoration: none; /* a하이퍼링크 밑줄 제거 */
+    color: black; /* a하이퍼링크 색상 검정 */
+}
+li{
+    list-style-type: none; /* li 항목 글머리 제거 */
+}
+/* ============================ header ============================== */
+#header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.header1 > ol{
+    display: flex;
+    gap: 10px;
+}
+.header2 > ol{
+    display: flex;
+    gap: 30px;
+}
+.main_img{
+    width: 100%;
+    margin: 0 auto;
+}
+/* ========================================================== */
+/* ======================= main ============================= */
 .main1{
     display: flex;
     justify-content: center;
@@ -30,7 +69,10 @@ li{ list-style-type: none; }
     justify-content: center;
     margin: 0 auto;
 }
-.main2 img{ width: 20%;}
+.main2 img{
+    width: 150px;
+    margin-right: 20px;
+}
 .main2 > ol{
     display: flex;
     
@@ -42,4 +84,24 @@ ol{
 ol > li{
     font-size: 11px;
 
+}
+/* ========================================================= */
+/* ======================== footer ========================= */
+
+#footer {
+    background-color: #2a2d32;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+}
+
+.footer1{
+    margin-right: 50px;
+}
+.footer2{
+    margin-right: 50px;
+}
+.footer3{
+    margin-right: 50px;
 }
