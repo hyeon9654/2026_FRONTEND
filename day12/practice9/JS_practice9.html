@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>인사 관리 대시보드</title>
+    <link rel="stylesheet" href="JS_practice9.css">
+</head>
+<body>
+
+    <!-- 헤더 -->
+    <header>
+        <h1>인사 관리 대시보드</h1>
+        <p>부서, 사원, 휴가 통합 관리 시스템</p>
+    </header>
+
+    <!-- 전체 영역 -->
+    <div id="wrap">
+
+        <!-- 왼쪽 : 부서 관리 -->
+        <div id="teamArea">
+            <h2>부서 관리</h2>
+
+            <div class="teamInputBox">
+                <input id="teamInput" type="text" placeholder="신규 부서명 입력">
+                <button onclick="teamAdd()" type="button">추가</button>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>부서명</th>
+                        <th>관리</th>
+                    </tr>
+                </thead>
+                <tbody id="teamTbody">
+                    <!-- JS로 부서 목록 출력 -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 가운데 : 사원 관리 -->
+        <div id="personArea">
+
+            <div class="사원등록">
+                <h2>사원 등록</h2>
+
+                <div class="box1">
+                    <div class="box2">
+                        <p>이름</p>
+                        <input id="personNameInput" class="name" type="text">
+                    </div>
+
+                    <div class="box2">
+                        <p>직급</p>
+                        <input id="personPositionInput" class="name" type="text">
+                    </div>
+                </div>
+
+                <div class="box1">
+                    <div class="box2">
+                        <p>부서</p>
+                        <select id="personTeamSelect" class="team">
+                            <!-- JS로 부서 목록 출력 -->
+                        </select>
+                    </div>
+
+                    <div class="box2">
+                        <p>사진</p>
+                        <input id="personImgInput" class="image" type="file">
+                    </div>
+                </div>
+
+                <button class="등록" onclick="personAdd()" type="button">등록</button>
+            </div>
+            <div class="사원목록">
+                <h2>사원 전체 목록</h2>
+
+                <table class="list">
+                    <thead>
+                        <tr>
+                            <th>사진</th>
+                            <th>이름</th>
+                            <th>부서</th>
+                            <th>직급</th>
+                            <th>관리</th>
+                        </tr>
+                    </thead>
+                    <tbody id="personTbody">
+                        <!-- JS로 사원 목록 출력 -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 오른쪽 : 휴가 관리 -->
+        <div id="vacationArea">
+
+            <div id="top">
+                <h2>사원 휴가 신청</h2>
+
+                <div class="inputBox">
+                    <h5>신청 사원</h5>
+                    <select class="pname" id="vacationPersonSelect">
+                        <!-- JS로 사원 목록 출력 -->
+                    </select>
+                </div>
+
+                <div class="dateBox">
+                    <div>
+                        <h5>휴가 시작일</h5>
+                        <input type="date" class="startDate">
+                    </div>
+
+                    <div>
+                        <h5>휴가 종료일</h5>
+                        <input type="date" class="endDate">
+                    </div>
+                </div>
+
+                <div class="inputBox">
+                    <h5>휴가 사유</h5>
+                    <input type="text" class="reason" placeholder="예: 여름 휴가">
+                </div>
+
+                <button onclick="vacationAdd()" class="vacationAdd" type="button">신청</button>
+            </div>
+
+            <div id="main">
+                <h2>휴가 신청 전체 목록</h2>
+                <div id="vacationListBox">
+                    <!-- JS로 휴가 목록 출력 -->
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
