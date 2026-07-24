@@ -1,25 +1,32 @@
-function boardWrite(){
-// 1. 입력 마크업 객체 가져오기
-    const titleInput = document.querySelector('#titleInput');
-    const contentInput = document.querySelector('#contentInput');
-    const pwdInput = document.querySelector('#pwdInput');
-// 2, 입력 마크업 객체내 입력값 가져오기
-    const title = titleInput.value;
-    const content = contentInput.value;
-    const pwd = pwdInput.value;
-// 3. 객체화
-    const obj = { title, content, pwd };
-// 4. localStorage에서 배열 가져오기. 
-let boardList = localStorage.getItem('boardList');
-if(boardList==null){
-    boardList = []
-}else{boardList = JSON.parse( boardList );}
-// 5. 객체를 배열에 저장
-obj.no = boardList.length == 0 ? 1: boardList[boardList.length - 1].no+1;
-boardList.push(obj);
-// 6. localStorage에 배열 저장하기
-localStorage.setItem( 'boardList', JSON.stringify(boardList));
-// 7. 기타 등등
-alert('게시물 작성 성공')
-location.href = 'http://127.0.0.1:5500/day13/test/list/list.html' 
-}// f end
+// js 열렸는지 확인 
+console.log( 'write.js' )
+
+function 등록함수(){
+        console.log( '등록함수 실행' )
+    // 1. 입력받은 값 가져오기 
+    let title = document.querySelector('.title').value;
+    let content = document.querySelector('.content').value;
+    let password = document.querySelector('.password').value;
+        console.log( title , content , password )
+    // 2. 객체 : 묶어주기
+    let obj = { title , content , password }
+        console.log( obj )
+    // 3. 웹스토리에 배열 가져오기 *
+    let boardList = JSON.parse( localStorage.getItem( 'boardList' ) )
+        console.log( boardList )
+    if( boardList == null ){ boardList = [] }
+        console.log( boardList )
+    // 4. 저장 
+    let no = boardList.length == 0 ? 1 : boardList[ boardList.length - 1 ].no + 1 
+        console.log( no )
+    obj.no = no 
+    // 5. 배열 저장
+    boardList.push( obj )
+        console.log( boardList )
+    // 6. 웹스토리에 배열 저장 * 
+    localStorage.setItem( 'boardList' , JSON.stringify( boardList ) ) // 개발자도구에서 확인 
+    // 7. 성공시 페이지 전환 
+    alert('게시글 작성 성공')
+    location.href= 'http://127.0.0.1:5500/day13/test/list/list.html'
+} // f end 
+

@@ -127,12 +127,36 @@ let sum;                        sum
 function sum( ){ }              sum( )
 ====================================================================================================
 
-    DOM : Document(HTML문서), Object(객체), Model(표준)
-        - html 언어는 객체가 없다. 즉] 변수/연산/함수 등등 없어서 제어/조작 불가능
-        - JS 언어는 객체가 있다. 즉] JS가 HTML 제어/조작 한다.
-        1. 내장객체 : document  , JS가 HTML 구조 (객체로) 갖는다 , JS가 포함된 HTML
-        2. 주요속성 : 
-            1) .querySelector( "CSS선택자" ) : 선택자의 마크업 1개 을 객체로 반환
-            2) .querySelectorAll( "CSS선택자" ) : 선택자의 마크업 N개 을 (객체)배열로 반환
+- DOM : document object model , 문서(HTML) 객체 표준화 
+    1. document : 내장객체 , HTML 제어/조작 가능한 객체 
+    2. 주요함수 및 속성 
+        1) .querySelector( CSS선택자 )      : 특정한 선택자의 마크업DOM 객체{} 1개 반환 
+        2) .querySelectorAll( CSS선택자 )   : 특정한 선택자의 마크업DOM (배열)객체[] N개 반환 
+        3) .innerHTML                       : 마크업DOM 객체내 사이에 HTML 호출/대입 ,
+             <마크업> 여기! </마크업> , <div> <td> <h> <p> <span> 등등 주로 사용 , <input/> <img/> 불가능
+        4) .value
+            <마크업 value="여기!" > , <input/> <select> <textarea> 등등 주로 사용 , <div> <td> 불가능
+        5) .src
+            <마크업 src="여기!"> , <img /> 등 주로 사용 
+        6) .style                           : 마크업DOM 객체내 CSS 문법 대입 
+        7) .classList                       : 마크업DOM 객체내 class 목록 반환 
+        8) .toggle( "클래스명" )             : 마크업DOM 객체내 특정한 class 추가/삭제 
+        9) .remove( )                       : 마크업DOM 객체 삭제
+        10) .files[0]                       : <input type="file" /> 첨부파일 객체로 반환 
 
-            
+- 함수들 
+1) "문자열".toLocaleString() : 천단위 콤마
+2) new Date() : 시스템 날짜/시간 객체
+    new Date().getFullYear()    : 연도 반환 
+    new Date().getMonth()       : 월 반환 ( 0:1월~)
+    new Date().getDate()        : 일 반환 vs    
+
+웹스토리지 : 브라우저 저장소 *문자열 타입*
+    1. 세션 스토리지 : 
+    2. 로컬 스트리지 : 
+    3. 사용법
+        .setItem( 'key
+        )
+        .getItem( )
+        .remove( )
+    4. JSON
